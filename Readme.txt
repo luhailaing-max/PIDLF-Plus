@@ -1,5 +1,10 @@
 
-First you must run Data_prepare.py to prepare the data
+First you must run Data_prepare.py to prepare the data(downloaded from https://uavsar.jpl.nasa.gov/cgi-bin/data.pl).
+Or you can dirctly download the processed data (already obtained using "run Data_prepare.py") by us at:
+	Files shared via Baidu network disk：UAVSAR
+	link: https://pan.baidu.com/s/1uwvt5t7GM5HOPMyJiJNtuA?pwd=yxbh 
+	Extraction code: yxbh 
+
 Environment：
 (1)Main python package:
 	pytorch 1.9
