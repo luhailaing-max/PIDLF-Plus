@@ -319,8 +319,8 @@ def main(site, idx):
 
 if __name__ == "__main__":
     site = 'lope' # lope, pongara, rabifo
-    N = 10
-    for idx in range(1,N):
+    N = 1
+    for idx in range(0,N):
         main(site, idx)
 
 
