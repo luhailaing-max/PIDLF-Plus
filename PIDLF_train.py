@@ -332,9 +332,9 @@ def main(ti, site):
 
 
 if __name__ == "__main__":
-    N = 10
+    N = 1
     site = 'lope' # lope, pongara, rabifo
-    for ti in range(1,N):
+    for ti in range(0,N):
         main(ti, site)
 
 
