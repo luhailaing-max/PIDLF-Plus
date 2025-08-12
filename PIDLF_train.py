@@ -20,10 +20,13 @@ import torch.optim as optim
 from torch import  nn, einsum
 import kapok
 import gc
+import math
 def getimgblock(arr, idx, partrow, partcol):
     band, r, c = arr.shape
-    rnum = r / partrow
-    cnum = c / partcol
+    # rnum = r / partrow
+    # cnum = c / partcol
+    rnum = math.ceil(r / partrow)
+    cnum = math.ceil(c / partcol)
     tem = idx
     idr = int(tem // cnum)
     idc = int(tem % cnum)
@@ -336,6 +339,7 @@ if __name__ == "__main__":
     site = 'lope' # lope, pongara, rabifo
     for ti in range(0,N):
         main(ti, site)
+
 
 
 
