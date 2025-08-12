@@ -23,12 +23,14 @@ from torch import  nn, einsum
 from sklearn.linear_model import LinearRegression
 import ResUnetPlusPlus
 import gc
-
+import math
 
 def getimgblock(arr, idx, partrow, partcol):
     band, r, c = arr.shape
-    rnum = r / partrow
-    cnum = c / partcol
+    # rnum = r / partrow
+    # cnum = c / partcol
+    rnum = math.ceil(r / partrow)
+    cnum = math.ceil(c / partcol)
     tem = idx
     idr = int(tem // cnum)
     idc = int(tem % cnum)
@@ -322,6 +324,7 @@ if __name__ == "__main__":
     N = 1
     for idx in range(0,N):
         main(site, idx)
+
 
 
 
